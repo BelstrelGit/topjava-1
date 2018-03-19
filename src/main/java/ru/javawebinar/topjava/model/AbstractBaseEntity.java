@@ -19,6 +19,9 @@ public abstract class AbstractBaseEntity {
         return this.id == null;
     }
 
+    public AbstractBaseEntity() {
+    }
+
     @Override
     public String toString() {
         return String.format("Entity %s (%s)", getClass().getName(), id);
